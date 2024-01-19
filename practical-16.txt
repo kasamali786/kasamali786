@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+class A{
+	int a;
+	public:
+		void setdata(int p)
+		{
+			a=p;
+		}
+		void show(A a1)
+		{
+			cout<<a1.a<<" "<<endl;
+		}
+};
+
+
+main()
+{
+	A a1,b1,C;
+	clrscr();
+	a1.show(a1);
+	getch();
+	return 0;
+
+}

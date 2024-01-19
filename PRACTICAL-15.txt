@@ -1,0 +1,41 @@
+#include<iostream.h>
+#include<conio.h>
+class A{
+	int a;
+	public:
+		void setdata(int p)
+		{
+			a=p;
+		}
+		void show(A a1)
+		{
+			cout<<a1.a<<" "<<endl;
+		}
+		friend A sum(A,A);
+};
+
+A sum(A a1,A b1)
+{
+	A c1;
+	c1.a=a1.a + b1.a;
+	return c1;
+}
+main()
+{
+	A p,q,r;
+	clrscr();
+	a1.setdata(100);
+	a1.show(a1);
+	b1.setdata(200);
+	b1.show(b1);
+	C=sum(a1,b1);
+	C.show(C);
+	getch();
+	return 0;
+
+}
+
+output:
+100
+200
+300

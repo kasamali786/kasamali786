@@ -1,0 +1,108 @@
+#include <iostream.h>
+
+#include<conio.h>
+
+class B;
+class A
+
+{
+
+int a;
+
+public:
+
+	void setvalue()
+
+	{
+
+	cout<<"Enter the value of a=";
+	cin>>a;
+
+	}
+	void print()
+
+	{
+	cout<<"value of A="<<a<<endl;
+	}
+	friend void swap(A,B);
+};
+class B
+{
+	int b;
+
+	public:
+
+	void setvalue()
+
+	{
+
+		cout<<"Enter the value of b=";
+		cin>>b;
+	}
+	void print()
+
+	{
+		cout<<"value of B="<<b<<endl;
+	}
+
+
+	friend void swap(A,B);
+
+};
+
+void swap(A a1, B b1)
+{
+	int temp;
+
+	temp=a1.a;
+
+	a1.a=b1.b;
+
+	b1.b=temp;
+
+	cout<<"value of A="<<a1.a<<endl;
+
+	cout<<"value of B="<<b1.b<<endl;
+
+}
+
+main()
+{
+	A p1;
+
+	B p2;
+
+	clrscr();
+
+	p1.setvalue();
+
+	p2.setvalue();
+
+	cout<<"Before Swapping\n";
+
+	p1.print();
+
+	p2.print();
+
+	cout<<"\nAfter swapping\n";
+
+	swap(p1,p2);
+
+	getch();
+
+	return 0;
+}
+
+
+output:
+
+enter the value of A=10
+enter the value of B=20
+
+before swapping
+value of a=10
+value of b=20
+
+after swapping
+value of a=20
+value of b=10
