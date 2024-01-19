@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+inline int squre(int p)
+{
+   return(p*p);
+}
+main()
+{
+  int a,sq;
+  clrscr();
+  cout<<"enter the value of a=";
+  cin>>a;
+  sq=<<"squre ofa="<<sq;
+  cout<<"squre ofa="<<sq;
+  getch();
+  return 0;
+}
+
+---------output----
+enter the value of a=20
+suquare of a=400

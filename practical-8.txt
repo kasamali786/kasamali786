@@ -1,0 +1,33 @@
+#include<iostream.h>
+#include<conio.h>
+class person
+{
+  static int age;
+  public:
+      void setdata()
+      {
+	age++;
+      }
+      void printdata()
+      {
+	cout<<"age="<<age<<endl;
+      }
+
+};
+int person::age;
+main()
+{
+  person p1,p2;
+  clrscr();
+  p1.setdata;
+  p1.printdata;
+  p2.setdata;
+  p2.printdata;
+  getch();
+  return 0;
+}
+
+
+output:
+age=1
+age=2

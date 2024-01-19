@@ -1,0 +1,44 @@
+#include<iostream.h>
+#include<conio.h>
+int n;
+class array
+{
+     int no[100];
+     public:
+     void insert();
+     void print();
+};
+void array::insert()
+{
+     cout<<"How Many Numbers=";
+     cin>>n;
+     for(int i=0;i<n;i++)
+     {
+	  cout<<"Enter the Number "<<i+1;
+	  cin>>no[i];
+     }
+}
+void array::print()
+{
+     for(int i=0;i<n;i++)
+     {
+	   cout<<no[i]<<" ";
+     }
+}
+main()
+{
+    array a;
+    clrscr();
+    a.insert();
+    a.print();
+    getch();
+    return 0;
+}
+
+OUTPUT:
+HOW MANY NUMBERS=2
+ENTER THE NUMBER 1
+30
+ENTER THE NUMBER 2
+40
+30 40

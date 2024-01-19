@@ -1,0 +1,58 @@
+#include<iostream.h>
+#include<conio.h>
+void sum(int a, int b);
+void sum(int a, float b);
+void sum(float a, float b);
+main()
+{
+    int a,b;
+    float c,d;
+    clrscr();
+    cout<<"A=";
+    cin>>a;
+    cout<<"B=";
+    cin>>b;
+    cout<<"C=";
+    cin>>c;
+    cout<<"D=";
+    cin>>d;
+    sum(a,b);
+    sum(a,c);
+    sum(c,d);
+    getch();
+    return 0;
+}
+void sum(int a, int b)
+{
+     cout<<"Result (A+B)="<<a+b;
+}
+void sum(int a, float b)
+{
+     cout<<"Result (A+C)="<<a+b;
+}
+void sum(float a, float b)
+{
+     cout<<"Result (C+D)="<<a+b;
+}
+
+
+
+output:
+
+A=2
+B=3
+C=5
+D=6
+RESULT (A+B)=5
+RESULT (A+C)=7
+RESULT (C+D)=5
+
+
+
+
+
+
+
+
+
+

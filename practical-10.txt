@@ -1,0 +1,49 @@
+#include<iostream.h>
+#include<conio.h>
+class emp
+{
+   char name[100];
+   public:
+     void addname;
+     void printname;
+
+};
+void emp::addname()
+{
+  cin>>name;
+}
+void emp::printname()
+{
+  cout<<name;
+}
+main()
+{  emp teacher[3];
+   clrscr();
+   for(i=0,i<3;i++)
+   {
+      cout<<"enter teacher name:" <<i+1<<"=";
+      teacher[i].addname();
+   }
+    for(i=0,i<3;i++)
+   {
+      cout<<" teacher :" <<i+1<<"=";
+      teacher[i].printname();
+   }
+   getch();
+   return 0;
+}
+
+output;
+
+enter teacher name 1=abbas
+enter teacher name 2=kasamali
+enter teacher name 2=ahemad
+teacher:1=abbas
+teacher:2=kasamali
+teacher:3=ahemad
+
+
+
+
+
+

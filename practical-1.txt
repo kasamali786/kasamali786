@@ -1,0 +1,19 @@
+#include<iostream.h>
+#include<conio.h>
+int p=10;
+int main()
+{
+   int p=20;
+   clrscr();
+   cout<<"p="<<p<<end1;
+   cout<<"p="<<::p;
+   getch();
+   return 0;
+}
+
+
+
+------------out put----------------
+
+p=20
+p=10
