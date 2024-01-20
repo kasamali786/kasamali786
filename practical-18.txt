@@ -1,0 +1,41 @@
+#include<iostream.h>
+#include<conio.h>
+class A{
+	int a,b,c;
+	public:
+		A(int p)
+		   {
+			a=p;
+		   }
+		A(int p,int q)
+		   {
+			a=p;
+			b=q;
+		   }
+		A(int p,int q,int r)
+		   {
+			a=p;
+			b=q;
+			c=r;
+		   }
+
+
+		void show(A a1)
+		{
+			cout<<a1.a<<" "<<a1.b<<" "<<a1.c<<endl;
+		}
+};
+
+
+main()
+{
+	A a1(15,30 ,20);
+	clrscr();
+	a1.show(a1);
+	getch();
+	return 0;
+
+}
+
+out put:
+15 30 20
