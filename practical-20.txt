@@ -1,0 +1,45 @@
+#include<iostream.h>
+#include<conio.h>
+int num=0;
+class emp
+{
+    public:
+    emp()
+    {
+	num++;
+	cout<<"constructor is called to object"<<num<<endl;
+    }
+    ~emp()
+    {
+
+	cout<<"destructor is destroyed to object"<<num<<endl;
+	num--;
+    }
+};
+main()
+{
+	cilscr();
+	{
+	emp e1,e2,e3,e4;
+	}
+	{
+	emp e5;
+	}
+	getch();
+	return 0;
+}
+
+output:
+constructor is called to object1
+constructor is called to object2
+constructor is called to object3
+constructor is called to object4
+
+destructor is destroyed to object4
+destructor is destroyed to object3
+destructor is destroyed to object2
+destructor is destroyed to object1
+
+constructor is called to object1
+destructor is destroyed to object1
+
