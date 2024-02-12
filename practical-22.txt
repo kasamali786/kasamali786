@@ -1,0 +1,46 @@
+#include<iostream.h>
+#include<conio.h>
+class complex
+{
+	float x;
+	float y;
+	public:
+	   complex(){}
+	   complex(float real,float imag)
+	   {
+	      x=real;
+	      y=imag;
+	   }
+	   void display()
+	   {
+	     cout<<x<<"+"<,y<<endl;
+	   }
+	   complex operator+(complex);
+};
+complex complex::operator+(complex c)
+{
+	complex C;
+	C.x=x+c.x;
+	C.y=y+c.y;
+	return C;
+}
+main()
+{
+    complex p1,p2,p3;
+    clrscr();
+    p1=complex(2.5,3.5);
+    p2=complex(1.6,2.7);
+    p3=p1+p2;//p3=p1.operator+(p2)
+    p1.display();
+    p2.display();
+    p3.display();
+    getch();
+    return 0;
+}
+
+output:
+
+2.5+3.5
+1.6+2.7
+4.1+6.2
+
