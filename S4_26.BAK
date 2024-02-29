@@ -44,6 +44,8 @@ main()
 	D.display();
 	getch();
 }
+output:
+SUM=50
 
 
 
