@@ -1,0 +1,62 @@
+#include<iostream.h>
+#include<conio.h>
+class base
+{
+	int data1;
+	public:
+	int data2;
+	void setdata(int a,int b)
+	{
+		data1=a;
+		data2=b;
+
+	}
+	int getdata1()
+	{
+		return data1;
+	}
+	void show()
+	{
+	cout<<"data1="<<data1<<endl;
+	cout<<"data2="<<data2<<endl;
+	}
+};
+class derived:public base
+{
+	int data3;
+	public:
+	void sum()
+	{
+	       data3=data2+getdata1();
+	}
+	void display()
+	{
+		cout<<"sum="<<data3<<endl;
+	}
+}
+main()
+{
+	clrscr();
+	derived D;
+	D.setsdata(10,20);
+	D.show();
+	D.sum();
+	D.display();
+	getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
