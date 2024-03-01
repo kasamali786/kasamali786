@@ -1,0 +1,48 @@
+#include<iostream.h>
+#include<conio.h>
+class A
+{
+     int a;
+     public:
+	void seta()
+	{
+	      a=10;
+	}
+	int geta()
+	{
+	      return a;
+	}
+};
+class B:public A
+{
+     public:
+     int b;
+	void setb()
+	{
+	   b=20;
+	}
+};
+class C:public B
+{
+     int s;
+     public:
+	void sum()
+	{
+	    s=geta()+b;
+	}
+	void display()
+	{
+	   cout<<"sum="<<b;
+	}
+};
+main()
+{
+   C p;
+   clrscr();
+   p.seta();
+   p.setb();
+   p.sum();
+   p.display();
+   getch();
+   return 0;
+}
